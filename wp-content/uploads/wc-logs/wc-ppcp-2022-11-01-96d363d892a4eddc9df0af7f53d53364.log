@@ -1,0 +1,17 @@
+2022-11-01T16:13:51+00:00 ERROR API error: Array
+(
+    [url] => https://api-m.paypal.com/v1/oauth2/token
+    [method] => POST
+    [request] => Array
+(
+    [grant_type] => client_credentials
+)
+
+    [error] => Array
+        (
+            [error] => invalid_client
+            [error_description] => Client Authentication failed
+        )
+
+)
+

@@ -1,0 +1,440 @@
+2022-11-05T12:46:31+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => b4037741bbf425ccb22b001a28c66b42
+            [Date] => Nov 5, 2022 @ 12:46
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_created.php?store=https://henoshi.com
+            [Duration] => 1.87981
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => ++/ee0wqkSzfaj4SwZQwogA/o0bLZZPGBa3SBPkrdRA=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => b4037741bbf425ccb22b001a28c66b42
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 12:46:31 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=IO%2FIMkokfW8F0lAL1YhkvCz3979XSW7AhQc3ZQVAlgD48iPFWODhTgLAqvkI3SYdz2WWNiUdYT9gvHkayULPuakXz0vl113dtkq9XSYNNQE%2FrPc%2BxlSHTCLIrvcyLdTuIz0K%2BQ%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 7655b14f0dd3472d-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-05T12:46:33+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 5095042f074a1543077e9e37c0dead7e
+            [Date] => Nov 5, 2022 @ 12:46
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_updated.php?store=https://henoshi.com
+            [Duration] => 1.81378
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => lJOeyZcsav17XseRoAN3czzBVJT23Ik8p6qDl5jXomQ=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 5095042f074a1543077e9e37c0dead7e
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 12:46:33 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=7yb4h%2BiStGs4yzYlhBeBE3J%2BB36%2BsSzmOLcDGy0bjls3xhrSFDnUkVmCMiCsptZ9WSUfl%2Bte4qtgZrnUNnumwPjEqSndjsPjoQuDM4Pblk2xaBTnHxv8ZntTFvBPrb5YTL%2BOcg%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 7655b159dc4687f5-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-05T19:39:01+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 69c7f10b249c38770ba507b255bf1958
+            [Date] => Nov 5, 2022 @ 19:39
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_created.php?store=https://henoshi.com
+            [Duration] => 2.55385
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => ijRHVT73owyp+dSnysm/OnTw/feRvjVDpuYRnvf9CBs=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 69c7f10b249c38770ba507b255bf1958
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 19:39:01 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JxEz31zAMjIXP1FRlC5AhIcs%2F7Xs4uES3336QhgzOUm0NF%2BDJ7yyMVPtytI0XXIuCUQtLTI7Vp%2BWRDH0XzTTQwXth%2FcNw0CuOOmQWgmJHMFpOPiu0B8g7y3RuwUFgKNYJqgt8g%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76580d88ddc349ea-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-05T19:39:03+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e7f65df6b80e8fb5c3f7abc8755b97ff
+            [Date] => Nov 5, 2022 @ 19:39
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_updated.php?store=https://henoshi.com
+            [Duration] => 2.50781
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => H9WMugjqRYfySrDV0X3VIYnIe68hSRczEStsIthzW2k=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => e7f65df6b80e8fb5c3f7abc8755b97ff
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 19:39:03 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Wl3Kn89WK3wrVQ34C%2BpBhA3W8jpeJ%2BWzM8HEa5k9EclvUcHikTcogM%2FampqK%2BcZIc7blK%2BwjVJw2ef6CTZi5KHWyzqvaNqOobGMRPkzarvRAEqhcplpCVW5eMP5jXjRXpJteGw%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76580d960e114ac0-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-05T20:18:04+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 2ccd19bdbbc948b4f85c84bf54ff6daa
+            [Date] => Nov 5, 2022 @ 20:18
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_created.php?store=https://henoshi.com
+            [Duration] => 1.98872
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => dBjWwZOA7D3X3WDxHcb9YkvFolD1zMpIlad+5Q69iyw=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 2ccd19bdbbc948b4f85c84bf54ff6daa
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 20:18:04 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TKVAzZRBz9%2BE3TgsbvJ%2FKIMfET9ks%2FewzzxnUuoQZ9xiMm10ApMx5uAcSvLdjhQNkDfMJsu6EekPD5pYPEEXjulXQ6EPnFmHcFIPH7JqpcvALMTHMVNZUmMdilhQy838euEWKw%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 765846bdc9cb6bd0-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-05T20:18:06+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 032673cdfd7692203b70466a9d9d9794
+            [Date] => Nov 5, 2022 @ 20:18
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_updated.php?store=https://henoshi.com
+            [Duration] => 2.50785
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => Pybv/8eev38kZphIEHexlEEVVwIkvup6dcD/nv1qe4U=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 032673cdfd7692203b70466a9d9d9794
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 20:18:06 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=SsvcmyK5QJAPC9O8oh64Q0lFRgggdRDI5VWjNYOu%2F2FZO%2FhzPn%2BDqDARhUpQfpB7JPy73MphylNj6Cx%2BFwLihEVx8qkFW9T2gV5IAqZ6vDHoMu2XL%2BikIA1iq5z%2FWG2aM9w4Ug%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 765846c90daa18b6-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-05T21:10:09+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1f3cbde55be77b10d3361f4acb7bcac7
+            [Date] => Nov 5, 2022 @ 21:10
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_created.php?store=https://henoshi.com
+            [Duration] => 1.91704
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => SvjSL78soGGHfJcYZka10YLvqpmdwEZOem3oWSsSJl4=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 1f3cbde55be77b10d3361f4acb7bcac7
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 21:10:09 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=K%2Fd8g7ZA3hwEOOhdjsX0L20Lybdtjjqq2SbJM%2Fx7c7GJ0v37VYKKHLpleZ%2FkPnsQu%2BtkzFZyuro8pwOA4Tb7rv40TLliRh4AooyQafMawyR2%2FDvwlXenIv6iDIRQmLE1o2Nrxg%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 7658930d5c1b9fd7-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2022-11-05T21:10:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 53474c9e5065fecc2a0e949985671670
+            [Date] => Nov 5, 2022 @ 21:10
+            [URL] => https://apps.synctrack.io/add-paypal-tracking/woocommerce/webhook/order_updated.php?store=https://henoshi.com
+            [Duration] => 2.40421
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/7.0.1 Hookshot (WordPress/6.1)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://henoshi.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => dEFbDDpyEoiYdm5ULh76X/S56GLzhlJDwhOHbri37rU=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 53474c9e5065fecc2a0e949985671670
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [date] => Sat, 05 Nov 2022 21:10:12 GMT
+                                    [content-type] => text/html; charset=UTF-8
+                                    [cf-cache-status] => DYNAMIC
+                                    [report-to] => {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RhvbEv%2BDfm%2Ba7m5wJPWLxBU6A%2FQfRUW0TFKXae93xtf6TNSIVQqOwA3g1KaSelrB%2FafysiTMbiBjm%2Fg8Q3ZkR6W12g6cJo%2FoLQmSYlFoXLinoXRyCdxv38K9P2mEXQ3CriXAWg%3D%3D"}],"group":"cf-nel","max_age":604800}
+                                    [nel] => {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+                                    [server] => cloudflare
+                                    [cf-ray] => 76589317ab6b4834-SIN
+                                    [content-encoding] => br
+                                    [alt-svc] => h3=":443"; ma=86400, h3-29=":443"; ma=86400
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+

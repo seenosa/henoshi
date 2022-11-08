@@ -1,0 +1,142 @@
+2022-11-01T16:32:47+00:00 DEBUG <------------------- WebToffee PayPal Express Payment ( Setting Express Checkout ) ------------------->
+stdClass Object
+(
+    [METHOD] => SetExpressCheckout
+    [RETURNURL] => https://henoshi.com/wc-api/Eh_PayPal_Express_Payment/?c=express_details&express=true&p=https://henoshi.com/checkout/
+    [CANCELURL] => https://henoshi.com/?page_id=17&cancel_order=true&order=wc_order_t1fhAjw7UVNzl&order_id=1051&redirect=https%3A%2F%2Fhenoshi.com%2Fcheckout%2F&_wpnonce=6355823f08&cancel_express_checkout=cancel
+    [ADDROVERRIDE] => 
+    [BRANDNAME] => henoshi.com
+    [LOGOIMG] => 
+    [SOLUTIONTYPE] => Sole
+    [LOCALECODE] => en_US
+    [USERSELECTEDFUNDINGSOURCE] => BML
+    [LANDINGPAGE] => Billing
+    [L_PAYMENTREQUEST_0_NAME0] => Moon Lamp
+    [L_PAYMENTREQUEST_0_DESC0] => size : XS
+    [L_PAYMENTREQUEST_0_AMT0] => 29.95
+    [L_PAYMENTREQUEST_0_QTY0] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL0] => https://henoshi.com/product/moon-lamp/?attribute_size=XS
+    [L_PAYMENTREQUEST_0_NAME1] => Furry Jacket
+    [L_PAYMENTREQUEST_0_DESC1] => color : Red, size : XL
+    [L_PAYMENTREQUEST_0_AMT1] => 37.97
+    [L_PAYMENTREQUEST_0_QTY1] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL1] => https://henoshi.com/product/furry-jacket/?attribute_color=Red&attribute_size=XL
+    [L_PAYMENTREQUEST_0_NAME2] => 🔥VIP Shipping Today🔥40% Off-Large-capacity Travel Cosmetic Bag
+    [L_PAYMENTREQUEST_0_DESC2] => color : PINK-Vip Shipping Today
+    [L_PAYMENTREQUEST_0_AMT2] => 25.78
+    [L_PAYMENTREQUEST_0_QTY2] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL2] => https://henoshi.com/product/large-capacity-travel-cosmetic-bag-2/?attribute_color=PINK-Vip+Shipping+Today
+    [L_PAYMENTREQUEST_0_NAME3] => Furry Jacket
+    [L_PAYMENTREQUEST_0_DESC3] => color : Red, size : S
+    [L_PAYMENTREQUEST_0_AMT3] => 32.97
+    [L_PAYMENTREQUEST_0_QTY3] => 2
+    [L_PAYMENTREQUEST_0_ITEMURL3] => https://henoshi.com/product/furry-jacket/?attribute_color=Red&attribute_size=S
+    [L_PAYMENTREQUEST_0_NAME4] => (Early Christmas Sale- 48% OFF) Silicone Sealed Wine, Beer, Champagne Stopper
+    [L_PAYMENTREQUEST_0_DESC4] => buy-more-save-more : BUY 1
+    [L_PAYMENTREQUEST_0_AMT4] => 7.99
+    [L_PAYMENTREQUEST_0_QTY4] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL4] => https://henoshi.com/product/early-christmas-sale-48-off-silicone-sealed-wine-beer-champagne-stopper/?attribute_buy-more-save-more=BUY+1
+    [L_PAYMENTREQUEST_0_NAME5] => (Early Christmas Sale- 48% OFF) Magnet-Automatic Bottle Opener
+    [L_PAYMENTREQUEST_0_DESC5] => magnet-automatic-bottle-opener : Buy 1
+    [L_PAYMENTREQUEST_0_AMT5] => 14.96
+    [L_PAYMENTREQUEST_0_QTY5] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL5] => https://henoshi.com/product/early-christmas-sale-48-off-magnet-automatic-bottle-opener/?attribute_magnet-automatic-bottle-opener=Buy+1
+    [L_PAYMENTREQUEST_0_NAME6] => The Magic Mat
+    [L_PAYMENTREQUEST_0_DESC6] => color : Gray, size : Regular, pack-size : Single
+    [L_PAYMENTREQUEST_0_AMT6] => 51.99
+    [L_PAYMENTREQUEST_0_QTY6] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL6] => https://henoshi.com/product/the-magic-mat/?attribute_color=Gray&attribute_size=Regular&attribute_pack-size=Single
+    [L_PAYMENTREQUEST_0_NAME7] => WALLET WITH BACK ZIPPER
+    [L_PAYMENTREQUEST_0_DESC7] => color : Black (with zipper)
+    [L_PAYMENTREQUEST_0_AMT7] => 34.88
+    [L_PAYMENTREQUEST_0_QTY7] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL7] => https://henoshi.com/product/wallet-with-back-zipper/?attribute_color=Black+%28with+zipper%29
+    [L_PAYMENTREQUEST_0_NAME8] => The ChillBud
+    [L_PAYMENTREQUEST_0_DESC8] => title : Default Title
+    [L_PAYMENTREQUEST_0_AMT8] => 16
+    [L_PAYMENTREQUEST_0_QTY8] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL8] => https://henoshi.com/product/the-chillbud/?attribute_title=Default+Title
+    [L_PAYMENTREQUEST_0_NAME9] => The Magic Mat
+    [L_PAYMENTREQUEST_0_DESC9] => color : Gray, size : Small, pack-size : Single
+    [L_PAYMENTREQUEST_0_AMT9] => 33.99
+    [L_PAYMENTREQUEST_0_QTY9] => 1
+    [L_PAYMENTREQUEST_0_ITEMURL9] => https://henoshi.com/product/the-magic-mat/?attribute_color=Gray&attribute_size=Small&attribute_pack-size=Single
+    [PAYMENTREQUEST_0_AMT] => 323.31
+    [PAYMENTREQUEST_0_CURRENCYCODE] => USD
+    [PAYMENTREQUEST_0_ITEMAMT] => 319.45
+    [PAYMENTREQUEST_0_SHIPPINGAMT] => 3.86
+    [PAYMENTREQUEST_0_TAXAMT] => 0
+    [PAYMENTREQUEST_0_SHIPDISCAMT] => 0
+    [PAYMENTREQUEST_0_PAYMENTACTION] => Sale
+    [MAXAMT] => 566.31
+    [PAYMENTREQUEST_0_SHIPTONAME] => Mia Franco 
+    [PAYMENTREQUEST_0_SHIPTOSTREET] => 268 New Court
+    [PAYMENTREQUEST_0_SHIPTOSTREET2] => 
+    [PAYMENTREQUEST_0_SHIPTOCITY] => Commodo at illo duis
+    [PAYMENTREQUEST_0_SHIPTOSTATE] => 81
+    [PAYMENTREQUEST_0_SHIPTOZIP] => 88759
+    [PAYMENTREQUEST_0_SHIPTOCOUNTRYCODE] => MQ
+    [PAYMENTREQUEST_0_SHIPTOPHONENUM] => 0317865542
+    [PAYMENTREQUEST_0_NOTETEXT] => 
+    [PAYMENTREQUEST_0_EMAIL] => nave@mailinator.com
+    [PAYMENTREQUEST_0_PAYMENTREQUESTID] => 1051
+)
+
+2022-11-01T16:32:47+00:00 DEBUG <------------------- WebToffee PayPal Express Payment ( Response on Express Start/Credit Start ) ------------------->
+stdClass Object
+(
+    [TIMESTAMP] => 2022-11-01T16:32:47Z
+    [CORRELATIONID] => 21560265d1049
+    [ACK] => Failure
+    [BUILD] => 57853092
+    [L_ERRORCODE0] => 10002
+    [L_SHORTMESSAGE0] => Security error
+    [L_LONGMESSAGE0] => Security header is not valid
+    [L_SEVERITYCODE0] => Error
+)
+
+2022-11-01T16:44:26+00:00 DEBUG <------------------- WebToffee PayPal Express Payment ( Setting Express Checkout ) ------------------->
+stdClass Object
+(
+    [METHOD] => SetExpressCheckout
+    [RETURNURL] => https://henoshi.com/wc-api/Eh_PayPal_Express_Payment/?c=express_details&express=true&p=https://henoshi.com/checkout/
+    [CANCELURL] => https://henoshi.com/?page_id=17&cancel_order=true&order=wc_order_5VYcXbmdbjVwZ&order_id=1052&redirect=https%3A%2F%2Fhenoshi.com%2Fcheckout%2F&_wpnonce=0638492d87&cancel_express_checkout=cancel
+    [ADDROVERRIDE] => 
+    [BRANDNAME] => henoshi.com
+    [LOGOIMG] => 
+    [SOLUTIONTYPE] => Sole
+    [LOCALECODE] => en_US
+    [USERSELECTEDFUNDINGSOURCE] => BML
+    [LANDINGPAGE] => Billing
+    [L_PAYMENTREQUEST_0_NAME0] => The Magic Mat
+    [L_PAYMENTREQUEST_0_DESC0] => color : Gray, size : Small, pack-size : Single
+    [L_PAYMENTREQUEST_0_AMT0] => 33.99
+    [L_PAYMENTREQUEST_0_QTY0] => 2
+    [L_PAYMENTREQUEST_0_ITEMURL0] => https://henoshi.com/product/the-magic-mat/?attribute_color=Gray&attribute_size=Small&attribute_pack-size=Single
+    [PAYMENTREQUEST_0_AMT] => 73.97
+    [PAYMENTREQUEST_0_CURRENCYCODE] => USD
+    [PAYMENTREQUEST_0_ITEMAMT] => 67.98
+    [PAYMENTREQUEST_0_SHIPPINGAMT] => 5.99
+    [PAYMENTREQUEST_0_TAXAMT] => 0
+    [PAYMENTREQUEST_0_SHIPDISCAMT] => 0
+    [PAYMENTREQUEST_0_PAYMENTACTION] => Sale
+    [MAXAMT] => 129.97
+    [PAYMENTREQUEST_0_SHIPTOSTREET2] => 
+    [PAYMENTREQUEST_0_NOTETEXT] => 
+    [PAYMENTREQUEST_0_EMAIL] => seenosa88@gmail.com
+    [PAYMENTREQUEST_0_PAYMENTREQUESTID] => 1052
+)
+
+2022-11-01T16:44:26+00:00 DEBUG <------------------- WebToffee PayPal Express Payment ( Response on Express Start/Credit Start ) ------------------->
+stdClass Object
+(
+    [TIMESTAMP] => 2022-11-01T16:44:26Z
+    [CORRELATIONID] => 7eddd6f121b2e
+    [ACK] => Failure
+    [BUILD] => 57853092
+    [L_ERRORCODE0] => 10002
+    [L_SHORTMESSAGE0] => Security error
+    [L_LONGMESSAGE0] => Security header is not valid
+    [L_SEVERITYCODE0] => Error
+)
+

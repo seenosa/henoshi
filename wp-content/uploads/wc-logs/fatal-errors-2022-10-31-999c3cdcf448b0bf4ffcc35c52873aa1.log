@@ -1,0 +1,22 @@
+2022-10-31T15:41:41+00:00 CRITICAL Uncaught Error: Call to a member function get_children() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-product-page.php:170
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(307): Woo_Variation_Swatches_Product_Page->add_to_cart_variation_params()
+#1 /var/www/wordpress/wp-includes/plugin.php(191): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(625): apply_filters()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(466): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(633): WC_Frontend_Scripts::localize_script()
+#5 /var/www/wordpress/wp-includes/class-wp-hook.php(307): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters()
+#7 /var/www/wordpress/wp-includes/plugin.php in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-product-page.php on line 170
+
+2022-10-31T15:41:59+00:00 CRITICAL Uncaught Error: Call to a member function get_children() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-product-page.php:170
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(307): Woo_Variation_Swatches_Product_Page->add_to_cart_variation_params()
+#1 /var/www/wordpress/wp-includes/plugin.php(191): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(625): apply_filters()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(466): WC_Frontend_Scripts::get_script_data()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-frontend-scripts.php(633): WC_Frontend_Scripts::localize_script()
+#5 /var/www/wordpress/wp-includes/class-wp-hook.php(307): WC_Frontend_Scripts::localize_printed_scripts()
+#6 /var/www/wordpress/wp-includes/class-wp-hook.php(331): WP_Hook->apply_filters()
+#7 /var/www/wordpress/wp-includes/plugin.php in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-product-page.php on line 170
+
