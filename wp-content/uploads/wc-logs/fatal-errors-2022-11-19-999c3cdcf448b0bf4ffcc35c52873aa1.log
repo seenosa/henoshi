@@ -1,0 +1,99 @@
+2022-11-19T04:36:10+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T04:38:12+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T04:41:52+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T04:43:35+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T04:44:55+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T14:26:19+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T14:27:42+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T14:30:51+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+
+2022-11-19T14:50:55+00:00 CRITICAL Uncaught Error: Call to a member function get_parent_id() on bool in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php:148
+Stack trace:
+#0 /var/www/wordpress/wp-includes/class-wp-hook.php(308): Woo_Variation_Swatches_Manage_Cache->clear_cache_on_product_modify()
+#1 /var/www/wordpress/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters()
+#2 /var/www/wordpress/wp-includes/plugin.php(517): WP_Hook->do_action()
+#3 /var/www/wordpress/wp-content/plugins/woocommerce/includes/data-stores/class-wc-product-data-store-cpt.php(303): do_action()
+#4 /var/www/wordpress/wp-content/plugins/woocommerce/includes/class-wc-data-store.php(207): WC_Product_Data_Store_CPT->delete()
+#5 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-data.php(199): WC_Data_Store->delete()
+#6 /var/www/wordpress/wp-content/plugins/woocommerce/includes/abstracts/abstract-wc-product.php(1471): WC_Data->delete()
+#7 /var/www/wordpress/wp-content/plugins in /var/www/wordpress/wp-content/plugins/woo-variation-swatches/includes/class-woo-variation-swatches-manage-cache.php on line 148
+

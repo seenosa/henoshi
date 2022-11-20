@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc774d927df7a198675703f4dd468bb52
+class ComposerStaticInitbf787e6c6272baedcceb458a4e1e3dc7
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -876,7 +876,6 @@ class ComposerStaticInitc774d927df7a198675703f4dd468bb52
         'Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\League\\Container\\ServiceProvider\\ServiceProviderInterface' => __DIR__ . '/..' . '/league/container/src/ServiceProvider/ServiceProviderInterface.php',
         'Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\League\\ISO3166\\Exception\\DomainException' => __DIR__ . '/..' . '/league/iso3166/src/Exception/DomainException.php',
         'Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\League\\ISO3166\\Exception\\ISO3166Exception' => __DIR__ . '/..' . '/league/iso3166/src/Exception/ISO3166Exception.php',
-        'Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\League\\ISO3166\\Exception\\InvalidArgumentException' => __DIR__ . '/..' . '/league/iso3166/src/Exception/InvalidArgumentException.php',
         'Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\League\\ISO3166\\Exception\\OutOfBoundsException' => __DIR__ . '/..' . '/league/iso3166/src/Exception/OutOfBoundsException.php',
         'Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\League\\ISO3166\\Guards' => __DIR__ . '/..' . '/league/iso3166/src/Guards.php',
         'Automattic\\WooCommerce\\GoogleListingsAndAds\\Vendor\\League\\ISO3166\\ISO3166' => __DIR__ . '/..' . '/league/iso3166/src/ISO3166.php',
@@ -4248,9 +4247,9 @@ class ComposerStaticInitc774d927df7a198675703f4dd468bb52
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc774d927df7a198675703f4dd468bb52::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc774d927df7a198675703f4dd468bb52::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitc774d927df7a198675703f4dd468bb52::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitbf787e6c6272baedcceb458a4e1e3dc7::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitbf787e6c6272baedcceb458a4e1e3dc7::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitbf787e6c6272baedcceb458a4e1e3dc7::$classMap;
 
         }, null, ClassLoader::class);
     }

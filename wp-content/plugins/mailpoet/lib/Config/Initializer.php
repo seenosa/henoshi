@@ -13,8 +13,8 @@ use MailPoet\Automation\Engine\Hooks as AutomationHooks;
 use MailPoet\Automation\Integrations\MailPoet\MailPoetIntegration;
 use MailPoet\Cron\CronTrigger;
 use MailPoet\Cron\DaemonActionSchedulerRunner;
-use MailPoet\Features\FeaturesController;
 use MailPoet\InvalidStateException;
+use MailPoet\Migrator\Cli as MigratorCli;
 use MailPoet\PostEditorBlocks\PostEditorBlock;
 use MailPoet\PostEditorBlocks\WooCommerceBlocksIntegration;
 use MailPoet\Router;
@@ -49,6 +49,9 @@ class Initializer {
 
   /** @var SettingsController */
   private $settings;
+
+  /** @var MigratorCli */
+  private $migratorCli;
 
   /** @var Router\Router */
   private $router;
@@ -107,9 +110,6 @@ class Initializer {
   /** @var MailPoetIntegration */
   private $automationMailPoetIntegration;
 
-  /** @var FeaturesController */
-  private $featuresController;
-
   /** @var PersonalDataExporters */
   private $personalDataExporters;
 
@@ -125,6 +125,7 @@ class Initializer {
     RestApi $restApi,
     Activator $activator,
     SettingsController $settings,
+    MigratorCli $migratorCli,
     Router\Router $router,
     Hooks $hooks,
     Changelog $changelog,
@@ -144,7 +145,6 @@ class Initializer {
     AssetsLoader $assetsLoader,
     Engine $automationEngine,
     MailPoetIntegration $automationMailPoetIntegration,
-    FeaturesController $featuresController,
     PersonalDataExporters $personalDataExporters,
     DaemonActionSchedulerRunner $actionSchedulerRunner
   ) {
@@ -154,6 +154,7 @@ class Initializer {
     $this->restApi = $restApi;
     $this->activator = $activator;
     $this->settings = $settings;
+    $this->migratorCli = $migratorCli;
     $this->router = $router;
     $this->hooks = $hooks;
     $this->changelog = $changelog;
@@ -173,7 +174,6 @@ class Initializer {
     $this->assetsLoader = $assetsLoader;
     $this->automationEngine = $automationEngine;
     $this->automationMailPoetIntegration = $automationMailPoetIntegration;
-    $this->featuresController = $featuresController;
     $this->personalDataExporters = $personalDataExporters;
     $this->actionSchedulerRunner = $actionSchedulerRunner;
   }
@@ -251,12 +251,10 @@ class Initializer {
       'multisiteDropTables',
     ]);
 
-    if ($this->featuresController->isSupported(FeaturesController::AUTOMATION)) {
-      WPFunctions::get()->addAction(AutomationHooks::INITIALIZE, [
-        $this->automationMailPoetIntegration,
-        'register',
-      ]);
-    }
+    WPFunctions::get()->addAction(AutomationHooks::INITIALIZE, [
+      $this->automationMailPoetIntegration,
+      'register',
+    ]);
 
     $this->hooks->initEarlyHooks();
   }
@@ -289,6 +287,7 @@ class Initializer {
 
   public function initialize() {
     try {
+      $this->migratorCli->initialize();
       $this->maybeDbUpdate();
       $this->setupInstaller();
       $this->setupUpdater();
@@ -311,10 +310,7 @@ class Initializer {
       $this->setupWoocommerceBlocksIntegration();
       $this->subscriberActivityTracker->trackActivity();
       $this->postEditorBlock->init();
-
-      if ($this->featuresController->isSupported(FeaturesController::AUTOMATION)) {
-        $this->automationEngine->initialize();
-      }
+      $this->automationEngine->initialize();
 
       $this->wpFunctions->doAction('mailpoet_initialized', MAILPOET_VERSION);
     } catch (InvalidStateException $e) {

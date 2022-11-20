@@ -1,9 +1,9 @@
 === MailPoet - emails and newsletters in WordPress ===
 Contributors: mailpoet
 Tags: email, email marketing, post notification, woocommerce emails, email automation, newsletter, newsletter builder, newsletter subscribers
-Requires at least: 5.6
+Requires at least: 5.8
 Tested up to: 6.0
-Stable tag: 3.102.1
+Stable tag: 4.0.0
 Requires PHP: 7.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -93,7 +93,7 @@ Or if you opt for a MailPoet plan, you’ll get access to the MailPoet Sending S
 
 A free Starter plan is available for those who have 1,000 subscribers or less and would like to use the MailPoet Sending Service. And our paid plans offer features and functionality for those with larger lists who are looking to grow their business using email marketing.
 
-Take a look at [our pricing page](http://www.mailpoet.com/pricing) for full details on what’s included in each plan.
+Take a look at [our pricing page](https://www.mailpoet.com/pricing) for full details on what’s included in each plan.
 
 = Before you install =
 
@@ -218,6 +218,27 @@ Check our [Knowledge Base](https://kb.mailpoet.com) or contact us through our [s
 6. WooCommerce emails
 
 == Changelog ==
+
+= 4.0.0 - 2022-11-15 =
+* Added: new Automations page (beta version, please share your feedback directly from the plugin);
+* Added: optional support for POST unsubscribe when sending with MailPoet Sending Service, which enables 1-click unsubscribe button in more email clients;
+* Added: engagement badges for opens, unsubscribes, and bounces;
+* Updated: minimum required WordPress version to 5.8;
+* Fixed: "Unknown storage engine 'InnoDB'" error (InnoDB engine is no longer required).
+
+= 3.103.1 - 2022-11-08 =
+* Fix a database problem that affected some versions of MySQL when creating the new migrations table.
+
+= 3.103.0 - 2022-11-07 =
+* Added: deleteList and updateList API methods (https://github.com/mailpoet/mailpoet/tree/trunk/doc);
+* Added: forms can be configured to show on product pages;
+* Improved: more explanatory automatic emails setup;
+* Improved: consistent case in the form editor labels;
+* Improved: long sign-up button text will wrap to a new line;
+* Improved: confirmation emails can now be personalized;
+* Fixed: MailPoet key validation can fail, if the site URL is configured with uppercase letters;
+* Fixed: required questions in onboarding can be skipped;
+* Declare MailPoet as compatible with the upcoming WooCommerce High Performance Order Storage.
 
 = 3.102.1 - 2022-11-03 =
 * Fixed: missing 'CheckoutSchema' class error in WooCommerce blocks integration;

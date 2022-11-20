@@ -24,7 +24,6 @@ use MailPoet\AdminPages\Pages\Upgrade;
 use MailPoet\AdminPages\Pages\WelcomeWizard;
 use MailPoet\AdminPages\Pages\WooCommerceSetup;
 use MailPoet\DI\ContainerWrapper;
-use MailPoet\Features\FeaturesController;
 use MailPoet\Form\Util\CustomFonts;
 use MailPoet\Util\License\License;
 use MailPoet\WP\Functions as WPFunctions;
@@ -52,9 +51,6 @@ class Menu {
   /** @var Router */
   private $router;
 
-  /** @var FeaturesController */
-  private $featuresController;
-
   /** @var CustomFonts  */
   private $customFonts;
 
@@ -64,7 +60,6 @@ class Menu {
     ServicesChecker $servicesChecker,
     ContainerWrapper $container,
     Router $router,
-    FeaturesController $featuresController,
     CustomFonts $customFonts
   ) {
     $this->accessControl = $accessControl;
@@ -72,7 +67,6 @@ class Menu {
     $this->servicesChecker = $servicesChecker;
     $this->container = $container;
     $this->router = $router;
-    $this->featuresController = $featuresController;
     $this->customFonts = $customFonts;
   }
 
@@ -433,11 +427,7 @@ class Menu {
   }
 
   private function registerAutomationMenu() {
-
-    if (!$this->featuresController->isSupported(FeaturesController::AUTOMATION)) {
-      return;
-    }
-    $this->wp->addSubmenuPage(
+    $automationPage = $this->wp->addSubmenuPage(
       self::MAIN_PAGE_SLUG,
       $this->setPageTitle(__('Automations', 'mailpoet')),
       // @ToDo Remove Beta once Automation is no longer beta.
@@ -468,6 +458,11 @@ class Menu {
     );
 
     // add body class for automation editor page
+    $this->wp->addAction('load-' . $automationPage, function() {
+      $this->wp->addFilter('admin_body_class', function ($classes) {
+        return ltrim($classes . ' mailpoet-automation-is-onboarding');
+      });
+    });
     $this->wp->addAction('load-' . $automationEditorPage, function() {
       $this->wp->addFilter('admin_body_class', function ($classes) {
         return ltrim($classes . ' site-editor-php');
@@ -561,6 +556,20 @@ class Menu {
       '%s - %s',
       __('MailPoet', 'mailpoet'),
       $title
+    );
+  }
+
+  public static function isOnMailPoetAutomationPage(): bool {
+    $screenId = isset($_REQUEST['page']) ? sanitize_text_field(wp_unslash($_REQUEST['page'])) : '';
+    $automationPages = [
+        'mailpoet-automation',
+        'mailpoet-automation-templates',
+        'mailpoet-automation-editor',
+      ];
+    return in_array(
+      $screenId,
+      $automationPages,
+      true
     );
   }
 

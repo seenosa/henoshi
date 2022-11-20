@@ -4,7 +4,7 @@ Donate link: https://octol.io/fs-repo-up
 Tags: table rate, table rate shipping, conditional shipping, free shipping, woocommerce shipping, woocommerce table rate shipping, cart based shipping, weight based shipping, totals based shipping, order based shipping, advanced shipping
 Requires at least: 5.7
 Tested up to: 6.1
-Stable tag: 4.16.1
+Stable tag: 4.16.2
 Requires PHP: 7.0
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -97,6 +97,12 @@ Multi Vendor Shipping for WooCommerce Add-on extends the Flexible Shipping plugi
 WooCommerce Delivery Date Picker extends the default features of Flexible Shipping plugin, allows you to choose a convenient delivery date for your ordered products and makes the shipping cost dependent on the selected date. It works with both the free and PRO versions, so you can buy it separately if you don't need the PRO features.
 
 [Buy WooCommerce Delivery Date Picker now &rarr;](https://octol.io/fs-repo-cross-ddp)
+
+= Distance Based Shipping Rates for WooCommerce =
+
+Distance Based Shipping Rates for WooCommerce extends the Flexible Shipping plugin functionalities by adding the rules based on distance and delivery duration. It works with both the free and PRO versions, so you can buy it separately if you don't need the PRO features.
+
+[Buy Distance Based Shipping Rates for WooCommerce now &rarr;](https://octol.io/fs-repo-cross-dbsr)
 
 You might also be interested in other...
 
@@ -221,6 +227,9 @@ We provide a limited support for the free version of our Flexible Shipping plugi
 If you are upgrading from the old Flexible Shipping version (1.3.2, woo-flexible-shipping) make sure to completely delete the old version first. If you install the new version without deleting the old one it may break your WordPress installation.
 
 == Changelog ==
+
+= 4.16.2 - 2022-11-15 =
+* Added extended debug information
 
 = 4.16.1 - 2022-10-27 =
 * Fixed Flexible Shipping Info page

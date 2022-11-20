@@ -217,6 +217,8 @@ class RateCalculator {
 			$logger->debug( sprintf( __( 'Contents weight: %1$s', 'flexible-shipping' ), wc_format_weight( $shipping_contents->get_contents_weight() ) ), $logger->get_input_data_context() );
 
 			$rate = $this->calculate_rate_for_rates( $method_settings, $shipping_contents, $rate_id, $logger );
+
+			do_action( 'flexible-shipping/rate-calculator/log', $logger );
 		} else {
 			$rate = [];
 		}

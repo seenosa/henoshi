@@ -68,19 +68,23 @@ class __TwigTemplate_5c71d57f60a0f5a4fc5d48d80259463fe103c80202fce3a75da88803acd
         // line 11
         echo json_encode(($context["api"] ?? null));
         echo ";
-    var mailpoet_workflow_count = ";
+    var mailpoet_automation_count = ";
         // line 12
-        echo json_encode(($context["workflowCount"] ?? null));
+        echo json_encode(($context["automationCount"] ?? null));
+        echo ";
+    var mailpoet_automation_templates = ";
+        // line 13
+        echo json_encode(($context["templates"] ?? null));
         echo ";
   </script>
 ";
     }
 
-    // line 16
+    // line 17
     public function block_after_css($context, array $blocks = [])
     {
         $macros = $this->macros;
-        // line 17
+        // line 18
         echo $this->extensions['MailPoet\Twig\Assets']->generateStylesheet("mailpoet-automation.css");
         echo "
 ";
@@ -98,7 +102,7 @@ class __TwigTemplate_5c71d57f60a0f5a4fc5d48d80259463fe103c80202fce3a75da88803acd
 
     public function getDebugInfo()
     {
-        return array (  81 => 17,  77 => 16,  70 => 12,  66 => 11,  63 => 10,  59 => 9,  52 => 4,  48 => 3,  37 => 1,);
+        return array (  85 => 18,  81 => 17,  74 => 13,  70 => 12,  66 => 11,  63 => 10,  59 => 9,  52 => 4,  48 => 3,  37 => 1,);
     }
 
     public function getSourceContext()

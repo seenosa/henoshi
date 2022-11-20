@@ -42,6 +42,7 @@ class WC_Advanced_Shipment_Tracking_Admin_Notice {
 		//add_action( 'admin_init', array( $this, 'ast_pro_v_3_4_admin_notice_ignore' ) );
 
 		add_action( 'ast_settings_admin_notice', array( $this, 'ast_settings_admin_notice' ) );
+		add_action( 'admin_init', array( $this, 'ast_settings_admin_notice_ignore' ) );
 		
 		//add_action( 'before_shipping_provider_list', array( $this, 'ast_db_update_notice' ) );	
 		//add_action( 'admin_init', array( $this, 'ast_db_update_notice_ignore' ) );	
@@ -61,7 +62,19 @@ class WC_Advanced_Shipment_Tracking_Admin_Notice {
 	}
 	
 	public function ast_settings_admin_notice() {
+
+		$ignore = get_transient( 'ast_settings_admin_notice_ignore' );
+		if ( 'yes' == $ignore ) {
+			return;
+		}
+
 		include 'views/admin_message_panel.php';
+	}
+
+	public function ast_settings_admin_notice_ignore() {
+		if ( isset( $_GET['ast-pro-settings-ignore-notice'] ) ) {
+			set_transient( 'ast_settings_admin_notice_ignore', 'yes', 518400 );
+		}
 	}
 	
 	/*
@@ -109,9 +122,9 @@ class WC_Advanced_Shipment_Tracking_Admin_Notice {
 		<div class="notice updated notice-success ast-dismissable-notice">			
 			<a href="<?php esc_html_e( $dismissable_url ); ?>" class="notice-dismiss"><span class="screen-reader-text">Dismiss this notice.</span></a>			
 			
-			<p>Get 20% when you upgrade to <a target="blank" href="https://www.zorem.com/product/woocommerce-advanced-shipment-tracking/">Advanced Shipment Tracking Pro</a> by 05/31! AST PRO will automate your fulfillment workflow, will save you time on your daily tasks and will keep your customers happy and informed on their shipped orders. Use code <strong>ASTPRO20</strong> to redeem your discount (valid by May 31st, 2022).</p>			
+			<p>Get 20% when you upgrade to <a target="blank" href="https://www.zorem.com/ast-pro/">Advanced Shipment Tracking Pro</a> by 05/31! AST PRO will automate your fulfillment workflow, will save you time on your daily tasks and will keep your customers happy and informed on their shipped orders. Use code <strong>ASTPRO20</strong> to redeem your discount (valid by May 31st, 2022).</p>			
 			
-			<a class="button-primary ast_notice_btn" target="blank" href="https://www.zorem.com/product/woocommerce-advanced-shipment-tracking/">Upgrade Now</a>
+			<a class="button-primary ast_notice_btn" target="blank" href="https://www.zorem.com/ast-pro/">Upgrade Now</a>
 			<a class="button-primary ast_notice_btn" href="<?php esc_html_e( $dismissable_url ); ?>">Dismiss</a>				
 		</div>	
 		<?php 				

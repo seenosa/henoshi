@@ -8,12 +8,17 @@ if (!defined('ABSPATH')) exit;
 use MailPoet\Cron\ActionScheduler\ActionScheduler as CronActionScheduler;
 use MailPoet\Cron\CronTrigger;
 use MailPoet\InvalidStateException;
+use MailPoet\Migrator\Migrator;
 use MailPoet\Settings\SettingsController;
 use MailPoet\WP\Functions as WPFunctions;
+use MailPoetVendor\Doctrine\DBAL\Connection;
 
 class Activator {
   public const TRANSIENT_ACTIVATE_KEY = 'mailpoet_activator_activate';
   private const TRANSIENT_EXPIRATION = 120; // seconds
+
+  /** @var Connection */
+  private $connection;
 
   /** @var SettingsController */
   private $settings;
@@ -31,12 +36,14 @@ class Activator {
   private $cronActionSchedulerRunner;
 
   public function __construct(
+    Connection $connection,
     SettingsController $settings,
     Populator $populator,
     WPFunctions $wp,
     Migrator $migrator,
     CronActionScheduler $cronActionSchedulerRunner
   ) {
+    $this->connection = $connection;
     $this->settings = $settings;
     $this->populator = $populator;
     $this->wp = $wp;
@@ -67,9 +74,8 @@ class Activator {
   }
 
   private function processActivate(): void {
-    $this->migrator->up();
+    $this->migrator->run();
     $this->deactivateCronActions();
-
     $this->populator->up();
     $this->updateDbVersion();
 
@@ -82,7 +88,7 @@ class Activator {
 
   public function deactivate() {
     $this->lockActivation();
-    $this->migrator->down();
+    $this->deleteAllMailPoetTablesAndData();
 
     $caps = new Capabilities();
     $caps->removeWPCapabilities();
@@ -123,5 +129,30 @@ class Activator {
       ];
       $this->settings->set('updates_log', $updatesLog);
     }
+  }
+
+  private function deleteAllMailPoetTablesAndData(): void {
+    $prefix = Env::$dbPrefix;
+    if (!$prefix) {
+      throw InvalidStateException::create()->withMessage('No database table prefix was set.');
+    }
+
+    // list all MailPoet tables by prefix
+    $prefixSql = $this->wp->escSql($prefix);
+    $tables = $this->connection->executeQuery("SHOW TABLES LIKE '$prefixSql%'")->fetchFirstColumn();
+
+    // drop all MailPoet tables in a single query
+    $tablesSql = implode(
+      ',',
+      array_map(function ($table): string {
+        return $this->wp->escSql(strval($table));
+      }, $tables)
+    );
+
+    $this->connection->executeStatement("
+      SET foreign_key_checks = 0;
+      DROP TABLE IF EXISTS $tablesSql;
+      SET foreign_key_checks = 1;
+    ");
   }
 }
